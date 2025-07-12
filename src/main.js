@@ -57,7 +57,7 @@ form.addEventListener('submit', e => {
     lastName: form.lastName.value,
     email: form.email.value,
     department: form.department.value,
-    role: form.role.valueOf
+    role: form.role.value
   };
 
   if (editId) {
@@ -81,7 +81,7 @@ window.editEmployee = function (id) {
   form.lastName.value = emp.lastName;
   form.email.value = emp.email;
   form.department.value = emp.department;
-  form.role.valueOf = emp.role;
+  form.role.value = emp.role;
   editId = id;
   showForm(true);
 };
